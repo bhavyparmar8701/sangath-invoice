@@ -1,0 +1,247 @@
+.quality-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #1a365d 0%, #0a192f 100%);
+  color: #ffffff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  color: #b0c4de;
+}
+
+.quality-assurance-section,
+.code-of-conduct-section,
+.ethics-statement {
+  padding: 4rem 0;
+}
+
+.quality-assurance-section {
+  background: #ffffff;
+}
+
+.code-of-conduct-section {
+  background: #f9f9f9;
+}
+
+.section-header-custom {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header-custom h2 {
+  font-size: 2.5rem;
+  color: #0a192f;
+  margin-bottom: 1rem;
+}
+
+.section-divider {
+  width: 80px;
+  height: 4px;
+  background: #1a365d;
+  margin: 0 auto 1rem;
+  border-radius: 2px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.quality-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.quality-intro {
+  margin-bottom: 3rem;
+}
+
+.quality-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.quality-standards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.standard-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #1a365d;
+  transition: all 0.3s;
+}
+
+.standard-card:hover {
+  background: #f0f4f8;
+  transform: translateX(5px);
+}
+
+.standard-icon {
+  font-size: 1.5rem;
+  color: #1a365d;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.standard-text {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.quality-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.detail-block {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.detail-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(26, 54, 93, 0.2);
+}
+
+.detail-block h3 {
+  font-size: 1.5rem;
+  color: #0a192f;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #1a365d;
+  padding-bottom: 0.5rem;
+}
+
+.detail-block p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #666;
+}
+
+.conduct-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conduct-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  border-top: 4px solid #1a365d;
+}
+
+.conduct-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(26, 54, 93, 0.2);
+}
+
+.conduct-card h3 {
+  font-size: 1.4rem;
+  color: #0a192f;
+  margin-bottom: 1rem;
+}
+
+.conduct-card p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #666;
+}
+
+.ethics-statement {
+  background: #ffffff;
+}
+
+.ethics-box {
+  background: linear-gradient(135deg, #1a365d 0%, #0a192f 100%);
+  color: #ffffff;
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ethics-box h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.ethics-box p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 968px) {
+  .quality-standards-grid,
+  .quality-details,
+  .conduct-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-header-custom h2 {
+    font-size: 2rem;
+  }
+
+  .standard-card,
+  .detail-block,
+  .conduct-card {
+    padding: 1.5rem;
+  }
+
+  .ethics-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .ethics-box h2 {
+    font-size: 1.8rem;
+  }
+}
+

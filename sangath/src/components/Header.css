@@ -1,0 +1,263 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* TOP BAR (BLUE - MATCH LOGO) */
+.header-top-bar {
+  background: #1E4FA3;   /* EXPORT BLUE */
+  color: #ffffff;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.header-top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-contact-info {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.contact-link:hover {
+  opacity: 0.85;
+}
+
+.contact-icon {
+  font-size: 1rem;
+}
+
+.header-language-selector {
+  display: flex;
+  align-items: center;
+}
+
+.language-select {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.language-select option {
+  background: #1E4FA3;
+  color: #ffffff;
+}
+
+/* MAIN HEADER */
+.header-main {
+  padding: 0.75rem 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* LOGO */
+.header-logo {
+  cursor: pointer;
+  flex-shrink: 0;
+  max-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img,
+.logo-image {
+  height: 70px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  display: block;
+}
+
+/* DISABLE TEXT LOGO */
+.logo-placeholder {
+  background: transparent;
+  padding: 0;
+}
+
+.logo-text {
+  display: none !important;
+}
+
+/* NAV */
+.header-nav {
+  flex: 1;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.nav-menu li button {
+  background: transparent;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0.75rem 1.25rem;
+  color: #2b2b2b;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.25s, border-bottom 0.25s;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+}
+
+/* HOVER = BLUE */
+.nav-menu li button:hover {
+  background: transparent;
+  color: #1E4FA3;
+  border-bottom: 2px solid rgba(30, 79, 163, 0.3);
+}
+
+/* ACTIVE = BLUE (MATCH LOGO) */
+.nav-menu li button.active {
+  background: transparent;
+  color: #1E4FA3;
+  font-weight: 700;
+  border-bottom: 2px solid #1E4FA3;
+}
+
+/* REMOVE ALL FOCUS / ACTIVE BORDERS */
+.nav-menu li button:focus,
+.nav-menu li button:focus-visible,
+.nav-menu li button:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* ACTIONS */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* CTA BUTTON = NAVY */
+.btn-quote {
+  background: #1a365d;   /* NAVY BLUE */
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.btn-quote:hover {
+  background: #2c5282;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(26, 54, 93, 0.3);
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+  padding: 0.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 968px) {
+  .header-top-content {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .header-contact-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+  }
+
+  .header-nav {
+    order: 3;
+    width: 100%;
+    display: none;
+  }
+
+  .header-nav.mobile-open {
+    display: block;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu li button {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .nav-menu li button:hover,
+  .nav-menu li button.active {
+    border-bottom: 1px solid #1E4FA3;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .btn-quote {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-logo img,
+  .logo-image {
+    height: 50px;
+    max-width: 140px;
+  }
+
+  .header-top-bar {
+    font-size: 0.8rem;
+    padding: 0.4rem 0;
+  }
+}

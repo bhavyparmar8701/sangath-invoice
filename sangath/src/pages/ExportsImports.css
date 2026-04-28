@@ -1,0 +1,248 @@
+.exports-imports-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #1a365d 0%, #0a192f 100%);
+  color: #ffffff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  color: #b0c4de;
+}
+
+.exports-section,
+.imports-section {
+  padding: 4rem 0;
+}
+
+.exports-section {
+  background: #ffffff;
+}
+
+.imports-section {
+  background: #f9f9f9;
+}
+
+.section-header-custom {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header-custom h2 {
+  font-size: 2.5rem;
+  color: #0a192f;
+  margin-bottom: 1rem;
+}
+
+.section-divider {
+  width: 80px;
+  height: 4px;
+  background: #1a365d;
+  margin: 0 auto 1rem;
+  border-radius: 2px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.trade-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.trade-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.trade-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(26, 54, 93, 0.2);
+}
+
+.trade-card h3 {
+  font-size: 1.8rem;
+  color: #0a192f;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #1a365d;
+  padding-bottom: 0.5rem;
+}
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.country-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.country-card.export {
+  background: #f0f4f8;
+  border: 2px solid #1a365d;
+}
+
+.country-card.import {
+  background: #f0f4f8;
+  border: 2px solid #2c5282;
+}
+
+.country-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.country-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.country-name {
+  font-weight: 600;
+  color: #0a192f;
+  font-size: 0.95rem;
+}
+
+.products-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.products-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.products-list li:last-child {
+  border-bottom: none;
+}
+
+.product-icon {
+  color: #1a365d;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.partnership-cta {
+  padding: 4rem 0;
+  background: #ffffff;
+}
+
+.cta-content-box {
+  background: linear-gradient(135deg, #1a365d 0%, #0a192f 100%);
+  color: #ffffff;
+  padding: 4rem 3rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cta-content-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.cta-content-box p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.btn-partner {
+  background: #ffffff;
+  color: #1a365d;
+  border: none;
+  padding: 1.25rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-partner:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 968px) {
+  .trade-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .countries-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .cta-content-box {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-header-custom h2 {
+    font-size: 2rem;
+  }
+
+  .trade-card {
+    padding: 1.5rem;
+  }
+
+  .countries-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .cta-content-box h2 {
+    font-size: 2rem;
+  }
+
+  .cta-content-box p {
+    font-size: 1rem;
+  }
+}
+

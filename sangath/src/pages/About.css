@@ -1,0 +1,249 @@
+.about-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #1a365d 0%, #0a192f 100%);
+  color: #ffffff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  color: #b0c4de;
+}
+
+.about-section,
+.vision-mission-section,
+.team-section,
+.certifications-section,
+.governance-section {
+  padding: 4rem 0;
+}
+
+.about-section h2,
+.team-section h2,
+.certifications-section h2,
+.governance-section h2 {
+  font-size: 2.5rem;
+  color: #0a192f;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content-block {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-block p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.vision-mission-section {
+  background: #f9f9f9;
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.vm-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.vm-card h3 {
+  font-size: 1.8rem;
+  color: #0a192f;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #1a365d;
+  padding-bottom: 0.5rem;
+}
+
+.vm-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.vm-card ul li {
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+  line-height: 1.6;
+}
+
+.vm-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #1a365d;
+  font-weight: bold;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  text-align: center;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(26, 54, 93, 0.2);
+}
+
+.team-photo-placeholder {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  background: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-icon {
+  font-size: 3rem;
+}
+
+.team-card h3 {
+  font-size: 1.3rem;
+  color: #0a192f;
+  margin-bottom: 0.5rem;
+}
+
+.team-card p {
+  color: #666;
+}
+
+.section-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.certifications-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.certification-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #1a365d;
+  transition: all 0.3s;
+}
+
+.certification-item:hover {
+  background: #f0f4f8;
+  transform: translateX(5px);
+}
+
+.cert-icon {
+  font-size: 1.5rem;
+  color: #1a365d;
+  font-weight: bold;
+}
+
+.certification-item span:last-child {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.governance-section {
+  background: #f9f9f9;
+}
+
+.governance-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.governance-list li {
+  padding: 1rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.governance-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #1a365d;
+  font-weight: bold;
+}
+
+@media (max-width: 968px) {
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .vm-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .page-header {
+    padding: 2rem 0;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-section h2,
+  .team-section h2,
+  .certifications-section h2,
+  .governance-section h2 {
+    font-size: 2rem;
+  }
+}

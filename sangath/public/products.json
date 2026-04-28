@@ -1,0 +1,96 @@
+{
+  "categories": [
+    {
+      "id": "spices",
+      "name": "Spices",
+      "products": [
+        {
+          "id": "Cumin powder",
+          "name": "Cumin Powders",
+          "description": "Sangath Global Exim is a manufacturer and exporter of high-quality Cumin Powder (Jeera Powder) made from premium cumin seeds. Our products are processed as per US FDA and ASTA quality standards, including Roasted Cumin Powder and ETO treated Cumin Powder. Cumin Powder is widely used to enhance the flavor of rice, stuffed vegetables, and many other dishes.",
+          "image": "/images/Cumin_Powder.webp",
+          "featured": false
+        },
+        {
+          "id": "turmeric",
+          "name": "Turmeric Powder",
+          "description": "Turmeric Powder is a bright yellow spice made from dried turmeric rhizomes. It has a warm, slightly peppery flavor and is widely used in cooking for its color and taste. Due to the presence of curcumin, it is also valued for cosmetic and medicinal uses and has been used in traditional practices for thousands of years.",
+          "image": "/images/turmeric_powder.jpg",
+          "featured": false
+        },
+        {
+          "id": "Red_chilli",
+          "name": "Red chilli",
+          "description": "Chilli originates from South America. Sangath Global Exim offers the best quality red chili powder, which is ideal for preparing a wide variety of cuisines such as curry, sausages, and many more.",
+          "image": "/images/red_chilli.jpeg",
+          "featured": false
+        },
+        {
+          "id": "Coriander_powder",
+          "name": "Coriander powder",
+          "description": "Sangath Global Exim is a manufacturer and exporter of high-quality Coriander Powder (Dhaniya Powder) in India. It is produced by grinding premium coriander seeds and processed as per US FDA and ASTA quality standards, including ETO treatment. Coriander powder has a warm, slightly citrusy flavor and is widely used to enhance the taste of rice, vegetables, and various dishes.",
+          "image": "/images/Coriander_powder.webp",
+          "featured": false
+        },
+        {
+          "id": "Fenugreek_Powder",
+          "name": "Fenugreek Powder",
+          "description": "Fenugreek also known as Methi is a native of South Eastern Europe and West Asia. Known for its medicinal properties. Fenugreek seeds are 6–8 mm long, oblong or square, green, and have a strong odor and slight bitterness.",
+          "image": "/images/Fenugreek_Powder.webp",
+          "featured": false,
+          "details": [
+            {
+              "type": "text",
+              "content": "Fenugreek also known as Methi is a native of South Eastern Europe and West Asia. Known for its medicinal properties. Fenugreek seeds are 6–8 mm long, oblong or square, green, and have a strong odor and slight bitterness. They smell and taste like maple syrup. Fenugreek (Trigonella foenum-graecum) is a clover-like herb that is native to the Mediterranean region, southern Europe, and western Asia. The seeds are used in cooking and as medicine."
+            },
+            {
+              "type": "list",
+              "title": "Fenugreek seeds contain:",
+              "items": [
+                "45-60% carbohydrates",
+                "20-30% proteins high in tryptophan and lysine",
+                "5-10% fixed oils (lipids)",
+                "Pyridine alkaloids, mainly choline (0.5%), trigonelline (0.2-0.38%), gentianine, and carpaine",
+                "Flavonoids apigenin, orientin, and luteolin"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Fenugreek seeds are used as a spice and condiment to improve the flavor and the nutritive value of foods. They are also used in spice blends and as a flavoring agent in beverages and tobacco."
+            },
+            {
+              "type": "text",
+              "content": "Fenugreek seeds contain a substantial amount of fiber, phospholipids, glycolipids, oleic acid, linolenic acid, linoleic acid, choline, and vitamins A, B1, B2, C, nicotinic acid, niacin, and many other functional elements."
+            },
+            {
+              "type": "text",
+              "content": "The seeds and their extracts have shown antioxidant and antiinflammatory properties."
+            }
+          ],
+          "specifications": [
+            {
+              "variety": "Whole Fenugreek Seeds",
+              "origin": "India",
+              "specification": "Moisture: 6-7%, Admixture:<1%, Purity:97%, / 98% / 99%.",
+              "packaging": "20, 50 Kgs Gunny Bags or PP Bags.",
+              "fcl": "24 MT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ghee",
+      "name": "Ghee",
+      "products": [
+        {
+          "id": "sangath-ghee-500",
+          "name": "Sangath Ghee 500ml",
+          "description": "Pure cow ghee 500ml",
+          "image": "/images/ghee-500.jpg",
+          "featured": false
+        }
+      ]
+    }
+  ]
+}
